@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #222;
+  line-height: 1.6;
+  padding: 2rem 1.5rem;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.75rem;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #aaa;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  color: #444;
+  border-left: 4px solid #999;
+  padding-left: 0.5rem;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  max-width: 700px;
+}
+
+ul, ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+section, article {
+  /* background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+}
+
+#products h3 {
+  color: #8b0000;
+}
+
+#products p {
+  font-size: 0.95rem;
+}
+
+a, img:hover {
+  opacity: 0.9;
+  transition: 0.3s ease;
+}

@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    min-height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.main{
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 8px 8px 6px grey ;
+}
+
+img{
+    border-radius: 50%;
+    width: 35%;
+    height: auto;
+}
+
+.about-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.about{
+    width: 90%;
+    height: 150px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 8px 8px 6px grey ;
+}
+.edu-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.edu{
+    width: 90%;
+    height: 150px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 8px 8px 6px grey ;
+}
+
+.hob-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.hob{
+    width: 90%;
+    height: 170px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 8px 8px 6px grey ;
+}
+h1{
+    margin-bottom: 1rem;
+}
+.about, .hob , .edu :hover{
+        box-shadow: 8px 6px 6px grey ;
+
+}
