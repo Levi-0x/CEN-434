@@ -9,13 +9,15 @@ body{
     min-height: 100vh;
     background-size: cover;
     color: white;
+    padding: 2rem;
 }
 
 .cakes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 article{
     text-align: center;
@@ -25,24 +27,36 @@ article{
     height: auto;
     background-color: rgb(255, 205, 213);
     box-shadow: 6px 6px 6px grey;
+    transition:all 0.5s ease-in-out 0s;
 }
+article:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 10px grey;
+
+}
+
+
+
 article h3{
     margin-bottom: 1rem;
 }
-
 img{
     border-radius: 50%;
     height: 300px;
 }
-
-h1{
-    font-size: 4rem;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-p{
-    font-size: 1.3rem;
+h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  color: white;
 }
 
-h2{
-    font-size: 3rem;
+p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  line-height: 1.4;
 }
