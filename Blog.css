@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
-  background:linear-gradient(to right ,whitesmoke, white );
+  background:linear-gradient(to right ,whitesmoke, white  );
   color: #222;
   line-height: 1.6;
   width: 100%;
@@ -16,9 +16,16 @@ body {
   align-items: center;
 }
 
-body > * {
+/* body > * {
   max-width: 800px;
   width: 100%;
+} */
+
+section{
+  width: 95%;
+  border-radius:10px;
+  padding: 2rem;
+  box-shadow: 0px 0px 8px grey;
 }
 
 h1 {
@@ -26,7 +33,29 @@ h1 {
   color: #333;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  animation: slide-across 4s ease-in-out infinite;
+  animation-delay: 2s;
 }
+
+@keyframes slide-across {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
 
 h2 {
   color: #444;
@@ -80,7 +109,6 @@ footer {
   padding-top: 1rem;
   font-size: 0.9rem;
   color: #666;
-  background-color: #fafafa;
   border-radius: 5px;
   width: 100%;
   max-width: 800px;
