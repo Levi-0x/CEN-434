@@ -9,9 +9,9 @@ function slideClose(){
     sideBar.classList.remove("open")
 }
 
-function addToCart(itemName){
+function addToCart(itemName , itemPrice){
     const newItem = document.createElement("li")
-    newItem.textContent = itemName
+    newItem.textContent = `${itemName} = $${itemPrice}`
     list.appendChild(newItem)
 
     const button = document.createElement("button")
@@ -19,4 +19,8 @@ function addToCart(itemName){
     newItem.appendChild(button)
     button.onclick = () => newItem.remove();
 
+}
+
+function clearAll(){
+    list.innerHTML =""
 }
