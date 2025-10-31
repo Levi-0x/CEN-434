@@ -16,12 +16,14 @@
     <h2>Our Cakes</h2>
 
 <section class="shopping-cart">
+
       <button class="close" onclick="slideClose()"> Close <img src="./images/close.png"></button> 
-      <h2>Shopping Cart</h2> <button class="clear" onclick="clearAll()">Clear All</button> 
+      <h2>Shopping Cart</h2>  
+      <span><h2>Total:<h2 id="total">$0</h2></h2></span> 
+      <button class="clear" onclick="clearAll()">Clear All</button> 
       <ul id="cart-ul">
 
       </ul>
-      <!-- <button class="remove" onclick="Remove()">Remove</button> -->
 </section>      
 
 
@@ -69,7 +71,7 @@
       <h3>Wedding Cakes</h3>
       <img src="images/img-6.jpg" alt="Strawberry cake" width="240">
       <p>Celebrate your special day with layered goodness. Price:₦60,000</p>
-      <button id=""  onclick="addToCart(Wedding-Cake , 60000) " class="buy-btn">Add to Cart</button>
+      <button id=""  onclick="addToCart('Wedding-Cake' , 60000)" class="buy-btn">Add to Cart</button>
 
     </article>      
   </section>

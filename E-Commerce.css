@@ -9,6 +9,7 @@ body{
   background: 
     linear-gradient(rgba(0,0,0,0.2)),
     url(./images/background1.jpg);
+  user-select: none;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -69,6 +70,7 @@ width: 100%;
 article{
   text-align: center;
   border-radius: 10px;
+  user-select: none;
   padding: 2rem;
   width: 350px;
   height: auto;
@@ -137,6 +139,7 @@ padding: 1rem 2rem;
 overflow-y: auto;top: 0;
 width: 500px;
 height: 100%;
+user-select: none;
 transition: right 0.8s ease-in-out;
 box-shadow: -3px 3px 3px  rgba(0,0,0,0.5);
 
@@ -163,6 +166,10 @@ background-color: rgba(0,0,0,0.5);
 }
 .shopping-cart button:active{
   box-shadow: 1px 1px 1px black;
+}
+
+.shopping-cart span{
+  display: flex;
 }
 
 .close{
