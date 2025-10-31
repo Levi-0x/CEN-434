@@ -112,6 +112,10 @@ article img{
   border-radius: 50%;
   height: 300px;
 }
+article button img{
+  height: 300px;
+  width: 300px;
+}
 h1 {
 font-size: 3rem;
 margin-bottom: 1rem;
