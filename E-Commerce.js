@@ -1,6 +1,7 @@
     const sideBar = document.querySelector(".shopping-cart")
     const list = document.getElementById("cart-ul")
     const total = document.getElementById("total")
+    const numBtn = document.getElementById("num-btn")
     let amount = 0
 
     function slideOut(){

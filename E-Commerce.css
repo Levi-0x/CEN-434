@@ -18,11 +18,12 @@
     color: white;
   }
 
+  /* For the navbar */
   nav{
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 3;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -35,6 +36,7 @@
   height: auto;
   }
   nav button{
+  position: relative;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -47,17 +49,22 @@
               box-shadow 0.2s;
   color: white;
   gap: 2px;
+  z-index: 1;
   }
 
   nav button:hover{
   background-color: rgba(0,0,0,0.5);
-
   }
   nav button:active{
     box-shadow: 1px 1px 1px black;
   }
 
+  nav h1 {
+  font-size: 3rem;
+  }
 
+
+  /* For the div holding the all the cakes */
   .cakes{
   display: flex;
   flex-wrap: wrap;
@@ -66,8 +73,43 @@
   padding: 2rem;
   width: 100%;
   }
+/* 
+.carousel-multi {
+  width: 90%;
+  height: auto;
+  padding: 1rem;
+  overflow: hidden;
+  margin: auto;
+}
 
-  article{
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: slide 30s linear infinite;
+}
+
+.article {
+  flex: 0 0 calc(33.333% - 20px); 
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+} */
+
+  .first  {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  color: white;
+  text-align: center;
+  }
+
+  /* For each cake item */
+  .article{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,10 +125,11 @@
     transition:all 0.5s ease-in-out 0s;
   }
 
-  article:hover{
+  .article:hover{
     transform: translateY(-10px);
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
   }
+
 
   .buy-btn{
   display: flex;
@@ -112,42 +155,36 @@
 
   }
 
-  article h3{
+  .article h3{
     margin-bottom: 1rem;
   }
-.article_img{
+  .article_img{
     border-radius: 50%;
     height: 300px;
   }
-  article button img{
+  .article button img{
     height: auto;
     width: 30px;
   }
-  h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  }
 
-  h2 {
-  font-size: 2rem;
-  margin: 2rem 0 1rem;
-  color: white;
-  text-align: center;
-  }
+
 
   p {
   font-size: 1rem;
   margin: 0.8rem 0;
   line-height: 1.4;
   }
+
+  /* For the Cart sidebar overall container */
   .shopping-cart{
   background-color: rgba(0,0,0,0.1);
   backdrop-filter: blur(10px);
   position: fixed;
+  top: 0;
   right: -100%;
-  z-index: 1100;
+  z-index: 4; /* So it stays above header */
   padding: 1rem 2rem;
-  overflow-y: auto;top: 0;
+  overflow-y: auto;
   width: 500px;
   height: 100%;
   user-select: none;
@@ -156,8 +193,10 @@
 
   }
   .open{
-    right: 0;
+    right: 0;  /* Sidebar class for javascript toggling*/
   }
+
+  /*For all buttons in the sidebar*/
   .shopping-cart button{
   padding: 1rem;
   font-size: 1.5rem;
@@ -179,21 +218,22 @@
     box-shadow: 1px 1px 1px black;
   }
 
-  .shopping-cart span{
-    display: flex;
+  .shopping-cart  h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  color: white;
+  text-align: center;
   }
 
+  /*So that the "TOTAL" and the amount stay together in the sidebar*/
+  .shopping-cart span{
+    display: flex; 
+  }
+
+  /* For the close button since it has an image within */
   .close{
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
-  background-color: rgba(0,0,0,0.2);
-  box-shadow: 3px 3px 3px black;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  border: solid transparent;
-  transition: background-color 1s ,
-              box-shadow 0.2s;
   color: white;
   gap: 2px;
   }
@@ -203,14 +243,7 @@
   height: auto;
   }
 
-  .close:hover{
-  background-color: rgba(0,0,0,0.5);
-
-  }
-  .close:active{
-    box-shadow: 1px 1px 1px black;
-  }
-
+  /* Used to style any list item that is created */
   .shopping-cart li{
     font-size: 1.5rem;
     list-style-type:decimal;

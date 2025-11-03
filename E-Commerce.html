@@ -9,11 +9,12 @@
 <body>
 <nav>
   <h1>Nurtures Cakes</h1> 
-  <button onclick="slideOut()" id="slide-btn"> Cart <img src="./images/cart.png">  </button>
+  <button onclick="slideOut()" id="slide-btn"> Cart <img src="./images/cart.png"> <span class="num-btn"></span>  </button>
+  
 </nav>
 
   <!-- <h3>Here at Nurtures Cakes we make handmade cakes for every occasion</h3> -->
-  <h2>Our Cakes</h2>
+  <!-- <h2 class="first">Our Cakes</h2> -->
 
 <section class="shopping-cart">
 
@@ -22,20 +23,22 @@
   <span><h2>Total:<h2 id="total">$0</h2></h2></span> 
   <button class="clear" onclick="clearAll()">Clear All</button> 
   <ul id="cart-ul">
+  </ul>
 
-    </ul>
 </section>      
 
 
 <section class="cakes">
-  <article>
+  <!-- <div class="carousel-multi">
+  <div class="carousel-track"> -->
+  <article class="article">
     <h3>Vanilla Sponge</h3>
     <img class="article_img" src="images/img-1.jpg" alt="Vanilla cake" width="240">
     <p>Light vanilla sponge with buttercream. Serves 8-10. Price: $6,000</p>
     <button id=""  onclick="addToCart('Vanilla-Cake',6000)" class="buy-btn"> <img src="./images/cart.png"> Add to Cart</button>
   </article>
 
-  <article>
+    <article class="article">
     <h3>Birthday Cakes</h3>
     <img class="article_img" src="images/img-3.jpg" alt="Vanilla cake" width="240">
     <p>Birthday Cakes at affordable prices. Size according to preference</p>
@@ -43,7 +46,7 @@
 
   </article>
 
-  <article>
+    <article class="article">
     <h3>Chocolate Cake</h3>
     <img class="article_img" src="images/img-2.jpg" alt="Vanilla cake with cherries" width="240">
     <p>Rich vanilla layers with cherries. Serves 8-10. Price: $8,000</p>
@@ -51,7 +54,7 @@
 
   </article>
 
-  <article>
+    <article class="article">
     <h3>Strawberry Shortcake</h3>
     <img class="article_img" src="images/img-4.jpg" alt="Strawberry cake" width="240">
     <p>Fresh strawberries and whipped cream. Serves 6-8. Price: $7,500</p>
@@ -59,7 +62,7 @@
 
   </article>
 
-  <article>
+    <article class="article">
     <h3>Double layered fruitcake</h3>
     <img  class="article_img"  src="images/img-8.jpg" alt="Strawberry cake" width="250px">
     <p>Get delicious Price: $10,000</p>
@@ -67,13 +70,16 @@
     
   </article>
 
-  <article>
+    <article class="article">
     <h3>Wedding Cakes</h3>
     <img  class="article_img"     src="images/img-6.jpg" alt="Strawberry cake" width="240">
     <p>Celebrate your special day with layered goodness. Price:₦60,000</p>
     <button id=""  onclick="addToCart('Wedding-Cake' , 60000)" class="buy-btn"> <img src="./images/cart.png"> Add to Cart</button>
 
-  </article>      
+   
+  
+  <!-- </div>
+  </div> -->
 </section>
 
   <script src="E-Commerce.js"></script>
