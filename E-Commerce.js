@@ -46,3 +46,7 @@
     total.innerHTML = "$0"
     amount = 0
     }
+
+    window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
